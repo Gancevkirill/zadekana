@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Game</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #game-screen {
+      position: relative;
+      width: 1300px;
+      height: 900px;
+      background-color: #fff;
+      border: 1px solid #000;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .player,
+    .monster,
+    .trap,
+    .finish-point {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #000;
+    }
+
+    .player {
+      background-color: blue;
+    }
+
+  .monster {
+    background-image: url('photo_2024-02-21_16-35-39.jpg');
+    background-size: cover;
+  }
+
+  .trap {
+    background-image: url('photo_2024-02-21_16-46-12.jpg');
+    background-size: cover;
+  }
+
+    .finish-point {
+    background-image: url('photo_2024-02-21_16-50-07.jpg');
+    background-size: cover;
+    }
+
+    #game-info {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 18px;
+      color: #000;
+    }
+
+    #time {
+      position: absolute;
+      top: 30px;
+      left: 10px;
+      font-size: 18px;
+      color: #000;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="app" class="container"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
